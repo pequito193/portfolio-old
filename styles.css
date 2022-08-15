@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background-color: #1f1e1e;
+    color: white;
+}
+
+
+
+/* Header begins here */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid red;
+    width: 100vw;
+    height: 100px;
+    padding: 20px 30px;
+    background-color: #1f1e1e;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-picture {
+    height: 60px;
+    width: auto;
+}
+
+.github {
+    filter: invert(100%);
+}
+
+.dark-mode {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.slider {
+    height: 26px;
+    width: 26px;
+    border-radius: 10px;
+    transform: translateX(-2px);
+    background-color: #121212;
+}
+/* Header ends here */
+
+
+
+/* About me section begins here */
+.about {
+    margin: 180px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    text-indent: 4%;
+}
+/* About me section ends here */
+
+
+
+/* Projects section begins here */
+.projects {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 20px;
+    margin: 20px 50px;
+    border: 2px solid red;
+}
+/* Projects section ends here */
