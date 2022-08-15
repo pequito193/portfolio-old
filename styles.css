@@ -26,6 +26,28 @@ body {
         color: #121212;
     }
 }
+
+@keyframes slider {
+    from {
+        transform: translateX(-2px);
+    }
+    to {
+        transform: translateX(25px);
+    }
+}
+
+.slider-move {
+    animation-name: slider;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.slider-return {
+    animation-name: slider;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
 /* Dark mode styling ends here */
 
 
