@@ -1,8 +1,32 @@
 body {
     margin: 0;
-    background-color: #1f1e1e;
-    color: white;
 }
+
+.body-dark {
+    animation-name: change-theme;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
+
+.body-light {
+    animation-name: change-theme;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/* Dark mode styling begins here */
+@keyframes change-theme {
+    from {
+        background-color: #1f1e1e;
+        color: white;
+    }
+    to {
+        background-color: #ddd;
+        color: #121212;
+    }
+}
+/* Dark mode styling ends here */
 
 
 
@@ -24,7 +48,7 @@ body {
     padding: 20px 30px;
     width: 100vw;
     height: 100px;
-    background-color: #1f1e1e;
+    background-color: #1f2831;
     border-bottom: 2px solid rgba(240, 240, 240, 0.788);
     position: fixed;
     top: 0;
@@ -57,7 +81,7 @@ body {
     width: 26px;
     border-radius: 10px;
     transform: translateX(-2px);
-    background-color: #121212;
+    background-color: #1f2831;
 }
 
 .header-picture,
@@ -66,9 +90,14 @@ body {
     cursor: pointer;
 }
 
+.light-mode
+
 @keyframes slider {
     from {
-        background-color: ;
+        filter: invert(0) ;
+    }
+    to {
+        filter: invert(100%);
     }
 }
 /* Header ends here */
@@ -109,7 +138,6 @@ h2 {
     grid-template-columns: repeat(auto-fill, 250px);
     gap: 20px;
     margin: 20px 30px;
-    border: 2px solid red;
 }
 
 .project-screenshot {
@@ -139,17 +167,3 @@ h2 {
     animation-fill-mode: forwards;
 }
 /* Projects section ends here */
-
-
-
-/* Dark mode styling begins here */
-.light-body {
-    background-color: invert(#1f1e1e);
-    color: #121212;
-}
-
-.light-header {
-    background-color: invert(#1f1e1e);
-    border-bottom: invert(rgba(240, 240, 240, 0788));
-}
-/* Dark mode styling ends here */
