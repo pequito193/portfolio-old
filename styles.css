@@ -1,54 +1,14 @@
 body {
     margin: 0;
-}
-
-.body-dark {
-    animation-name: change-theme;
-    animation-duration: 2s;
-    animation-direction: reverse;
-    animation-fill-mode: forwards;
+    background-color: #1f1e1e;
+    color: white;
+    transition: 1s;
 }
 
 .body-light {
-    animation-name: change-theme;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    background-color: #ddd;
+    color: #121212;
 }
-
-/* Dark mode styling begins here */
-@keyframes change-theme {
-    from {
-        background-color: #1f1e1e;
-        color: white;
-    }
-    to {
-        background-color: #ddd;
-        color: #121212;
-    }
-}
-
-@keyframes slider {
-    from {
-        transform: translateX(-2px);
-    }
-    to {
-        transform: translateX(25px);
-    }
-}
-
-.slider-move {
-    animation-name: slider;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.slider-return {
-    animation-name: slider;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-direction: reverse;
-}
-/* Dark mode styling ends here */
 
 
 
@@ -104,23 +64,17 @@ body {
     border-radius: 10px;
     transform: translateX(-2px);
     background-color: #1f2831;
+    transition: 1s;
+}
+
+.slide-right {
+    transform: translateX(25px);
 }
 
 .header-picture,
 .dark-mode:hover,
 .slider:hover {
     cursor: pointer;
-}
-
-.light-mode
-
-@keyframes slider {
-    from {
-        filter: invert(0) ;
-    }
-    to {
-        filter: invert(100%);
-    }
 }
 /* Header ends here */
 
@@ -158,7 +112,8 @@ h2 {
     align-items: center;
     font-weight: bold;
     grid-template-columns: repeat(auto-fill, 250px);
-    gap: 20px;
+    row-gap: 30px;
+    column-gap: 50px;
     margin: 20px 30px;
 }
 
