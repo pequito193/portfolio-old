@@ -107,11 +107,11 @@ h2 {
 }
 
 .projects {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    grid-template-columns: repeat(auto-fill, 250px);
+    flex-wrap: wrap;
     row-gap: 30px;
     column-gap: 50px;
     margin: 20px 30px;
@@ -140,7 +140,7 @@ h2 {
 .project-screenshot:hover {
     cursor: pointer;
     animation-name: scaleup;
-    animation-duration: 0.8s;
+    animation-duration: 0.75s;
     animation-fill-mode: forwards;
 }
 /* Projects section ends here */
