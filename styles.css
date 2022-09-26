@@ -121,6 +121,7 @@ h2 {
     width: 240px;
     height: 240px;
     border-radius: 10px;
+    opacity: 85%;
 }
 
 .project-description {
@@ -131,9 +132,11 @@ h2 {
 @keyframes scaleup {
     from {
         transform: scale(1.0,1.0);
+        opacity: 85%;
     }
     to {
         transform: scale(1.1, 1.1);
+        opacity: 65%;
     }
 }
 
