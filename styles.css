@@ -37,6 +37,7 @@ body {
     left: 0;
     animation-name: dropdown;
     animation-duration: 2s;
+    z-index: 10;
 }
 
 .header-picture {
@@ -122,6 +123,7 @@ h2 {
     height: 240px;
     border-radius: 10px;
     opacity: 85%;
+    z-index: 1;
 }
 
 .project-description {
