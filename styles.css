@@ -65,7 +65,7 @@ body {
     border-radius: 10px;
     transform: translateX(-2px);
     background-color: #1f2831;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .slide-right {
